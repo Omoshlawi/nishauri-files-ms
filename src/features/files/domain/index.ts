@@ -1,0 +1,1 @@
+export {uploadSingeFile} from "./controlers/uploads"

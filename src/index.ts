@@ -5,6 +5,7 @@ import { handleErrors } from "./middlewares";
 import morgan from "morgan";
 import { configuration } from "./utils";
 import router from "./features/files/route";
+import ip from "ip";
 
 const app = express();
 // --------------------middlewares---------------------------
@@ -29,6 +30,8 @@ app.use(handleErrors);
 
 const port = configuration.port ?? 0;
 app.listen(port, () => {
+  // console.log(ip.address());
+
   console.log(
     `[+]${configuration.name}:${configuration.version} listening on port ${port}...`
   );
