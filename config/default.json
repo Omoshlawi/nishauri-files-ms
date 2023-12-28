@@ -1,4 +1,9 @@
 {
     "name": "Nishauri Files Services registry",
-    "port": null
+    "port": null,
+    "db":null,
+    "registry": {
+        "url":"http://localhost:9000",
+        "version": "*"
+    }
 }

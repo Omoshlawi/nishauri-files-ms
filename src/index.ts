@@ -3,8 +3,8 @@ import express from "express";
 import cors from "cors";
 import { handleErrors } from "./middlewares";
 import morgan from "morgan";
-import router from "./features/registry/route";
 import { configuration } from "./utils";
+import router from "./features/files/route";
 
 const app = express();
 // --------------------middlewares---------------------------
